@@ -10,6 +10,6 @@ After training the XGBoost model, the analysis carefully tunes its hyperparamete
 
 Finally, the analysis examines which statistics are most important for predicting wins by looking at the feature importance scores provided by the XGBoost model. The results show that turnovers committed by the offense and turnovers forced by the defense are the strongest predictors, followed closely by total yards gained and total yards allowed. 
 
-<img width="928" height="548" alt="image" src="https://github.com/user-attachments/assets/8f6353e6-8cdc-4c73-8a40-9f1b432dc689" />
+<img width="464" height="229" alt="image" src="https://github.com/user-attachments/assets/8f6353e6-8cdc-4c73-8a40-9f1b432dc689" />
 
 Other statistics, such as passing yards, have almost no influence on the prediction. This insight is valuable because it confirms that protecting the football and controlling the total yardage battle are the key drivers of success in the NFL, while raw passing yardage alone does not significantly determine the outcome. The model is then tested on new data from a different season, for example the **2025 Seattle Seahawks Super Bowl Championship Season** to verify that it generalizes well beyond the original training set.
