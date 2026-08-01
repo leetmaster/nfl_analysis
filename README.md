@@ -2,7 +2,7 @@
 
 The analysis begins by loading a dataset of NFL games from the 2021 season, where each row represents a single game and includes both offensive and defensive statistics for one team. The primary goal is to predict whether a team will win based on these in-game performance metrics. The first step involves cleaning the data by converting the result labels, which originally contain wins, losses, and ties, into a simple binary format where a win is coded as one and both losses and ties are coded as zero. This transformation is necessary because the predictive model requires numeric outcomes, and the tie category is too small to be meaningful for training.
 
-<img width="571" height="437" alt="image" src="https://github.com/user-attachments/assets/46349db1-7f1c-4bca-b3e6-caa48f457fae" />
+<img width="285" height="218" alt="image" src="https://github.com/user-attachments/assets/46349db1-7f1c-4bca-b3e6-caa48f457fae" />
 
 Instead of using a traditional logistic regression, the analysis employs **XGBoost**, which is a powerful machine learning algorithm based on gradient-boosted decision trees. Unlike logistic regression, which can only capture linear relationships between the statistics and the outcome, XGBoost is able to detect complex non-linear patterns and interactions between multiple variables. For example, it can learn that a high number of turnovers only becomes dangerous when combined with low total yardage, or that defensive performance matters more in certain game contexts. The algorithm is trained on the game statistics, and it builds an ensemble of decision trees sequentially, with each new tree correcting the errors made by the previous ones, which often leads to higher predictive accuracy.
 
