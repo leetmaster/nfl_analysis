@@ -13,3 +13,14 @@ Finally, the analysis examines which statistics are most important for predictin
 <img width="464" height="229" alt="image" src="https://github.com/user-attachments/assets/8f6353e6-8cdc-4c73-8a40-9f1b432dc689" />
 
 Other statistics, such as passing yards, have almost no influence on the prediction. This insight is valuable because it confirms that protecting the football and controlling the total yardage battle are the key drivers of success in the NFL, while raw passing yardage alone does not significantly determine the outcome. The model is then tested on new data from a different season, for example the **2025 Seattle Seahawks Super Bowl Championship Season** to verify that it generalizes well beyond the original training set.
+
+## Interactive demo (Streamlit)
+
+Run an interactive version of this analysis in the browser:
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+Explore any offensive/defensive stat as a boxplot, train the XGBoost model on an interactively chosen test-set size and review its feature importances, and see the 2025 Seahawks win predictions game by game.
